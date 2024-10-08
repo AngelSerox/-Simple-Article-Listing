@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: #FFFFFF;
+}
+
+#titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+#seccion_1, #seccion_2, #seccion_3 {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 20px;
+    max-width: 700px; /* Ajusta según el ancho deseado */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+#seccion_1 img, #seccion_2 img, #seccion_3 img {
+    width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+    border-radius: 8%;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; /* Alinea el h2 y el p uno debajo del otro */
+}
+
+h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0; /* Remueve márgenes para alinearlo bien */
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6C727F;
+    margin: 15px 0 0 0; /* Espacio superior pequeño debajo del h2 */
+}
