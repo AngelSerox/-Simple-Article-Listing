@@ -1,55 +1,63 @@
+/* Elimina márgenes predeterminados y centra el contenido en la página tanto horizontal como verticalmente */
 html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Fondo blanco */
 }
 
+/* Estilos para el contenedor del título */
 #titulo {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
 }
 
+/* Estilo del título principal */
 h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 2.25rem;
-    font-weight: 600;
-    max-width: 600px;
+    font-family: Poppins, sans-serif; /* Fuente elegante */
+    font-size: 2.25rem; /* Tamaño del texto grande */
+    font-weight: 600; /* Peso del texto grueso */
+    max-width: 600px; /* Limita el ancho del título */
 }
 
+/* Estilos para las secciones de artículos */
 #seccion_1, #seccion_2, #seccion_3 {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    margin-bottom: 20px;
-    max-width: 700px; /* Ajusta según el ancho deseado */
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    display: flex; /* Flexbox para alinear elementos (imagen, texto) en fila */
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección */
+    margin-bottom: 20px; /* Espacio inferior entre las secciones */
+    max-width: 700px; /* Ancho máximo de las secciones */
+    justify-content: flex-start; /* Alinea los elementos (imagen y texto) al inicio de la sección */
 }
 
+/* Estilo de las imágenes dentro de cada sección */
 #seccion_1 img, #seccion_2 img, #seccion_3 img {
-    width: 150px; /* Ajusta el tamaño de las imágenes */
-    height: auto;
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
     margin-right: 50px; /* Espacio entre la imagen y el texto */
-    border-radius: 8%;
+    border-radius: 8%; /* Bordes redondeados de las imágenes */
 }
 
+/* Contenedor para organizar el texto (h2 y p) en columna */
 .texto {
     display: flex;
-    flex-direction: column; /* Alinea el h2 y el p uno debajo del otro */
+    flex-direction: column; /* Ordena los elementos (h2 y p) en columna */
 }
 
+/* Estilo del título del artículo */
 h2 {
-    font-family: Poppins, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0; /* Remueve márgenes para alinearlo bien */
+    font-family: Poppins, sans-serif; /* Fuente del título */
+    font-size: 1.25rem; /* Tamaño del título */
+    font-weight: 600; /* Título en negrita */
+    margin: 0; /* Sin margen para que quede alineado correctamente */
 }
 
+/* Estilo del párrafo de la fecha del artículo */
 p {
-    font-family: Poppins, sans-serif;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #6C727F;
-    margin: 15px 0 0 0; /* Espacio superior pequeño debajo del h2 */
+    font-family: Poppins, sans-serif; /* Fuente del párrafo */
+    font-size: 0.875rem; /* Tamaño del texto del párrafo */
+    font-weight: 500; /* Peso del texto intermedio */
+    color: #6C727F; /* Color gris del texto */
+    margin: 15px 0 0 0; /* Espacio superior entre el h2 y el p */
 }
